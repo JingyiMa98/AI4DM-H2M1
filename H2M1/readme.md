@@ -1,23 +1,20 @@
-## General Notes for Running this Flask App!:
----
-To run the tool locally download the code and follow the steps below:
-- Open command prompt & change directory to the project folder `cd <folder_path>`
-- make sure your Python version >= 3.12 
-- Set up a virtual environment for python, in the command prompt:
-    - For Windows- 
-        - run `python -m venv .venv`
-        - to activate the virtual envirnoment- `.venv\Scripts\activate.bat`
-    - For MAC- 
-        - first run `pip install virtualenv`
-        - then `virtualenv .venv`
-        - to activate the virtual envirnoment- `source .venv/bin/activate`
-    - note- ".venv" is the name of the environment, so you can use whatever name you want.
+Setup:
+Access the app at http://127.0.0.1:5000/.
+Flask: Web framework to run the app.
+Hugging Face Transformers: To handle image-to-text processing.
+OpenAI: For generating poetry and stories from image descriptions.
+dotenv: To manage environment variables.
+Jupyter Notebook (optional): Used for experimentation and testing in hugface.ipynb.
 
-- Once the virtual environment is active then (* only if you are running the app for the first time/or there is a change in requirements.txt on the device, otherwise skip this step*) `pip install -r requirements.txt`
+Operation：
+1. Navigate to the home page.
+2. Upload an image file.
+3. The application will generate a description and a poetic output based on the image using AI models.
+4. View the generated poem alongside the uploaded image.
+   
+Dependencies
+The following libraries and APIs are required to run the project:
 
-- create ".env" file to store all the environment variables for Flask, Huggingface, OpenAI & Langchain. Copy this code into the ".env" file-
-    - `FLASK_APP = app`
-    - `FLASK_RUN_PORT = 8080`
-    - `FLASK_DEBUG = True`
-    - `HF_TOKEN = ""`
-    - `OPENAI_API_KEY = ""`
+Models Used
+Salesforce/blip-image-captioning-large: Hugging Face model for image captioning.
+GPT-4: OpenAI's language model for generating poetic content.
