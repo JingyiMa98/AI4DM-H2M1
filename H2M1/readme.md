@@ -1,6 +1,6 @@
 Setup:
 
-http://127.0.0.1:8000/milestone1
+Video link: https://youtu.be/bqNhp9y2Tw4
 1. Flask: Web framework to run the app.
 2. Hugging Face Transformers: To handle image-to-text processing.
 3. OpenAI: For generating poetry and stories from image descriptions.
