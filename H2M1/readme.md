@@ -1,6 +1,5 @@
 Setup:
 
-Access the app at http://127.0.0.1:5000/.
 
 1. Flask: Web framework to run the app.
 2. Hugging Face Transformers: To handle image-to-text processing.
